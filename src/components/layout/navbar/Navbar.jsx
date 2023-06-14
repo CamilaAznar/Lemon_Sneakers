@@ -1,4 +1,19 @@
+import CartWidget from "./components/common/cartWidget/CartWidget"
+
 const Navbar = ()=>{
-    return <h1 style={{color: "red"}}>este es el Navbar</h1>
+    return (
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        <CartWidget/>
+        </div>
+
+
+
+    )
 }
 export default Navbar

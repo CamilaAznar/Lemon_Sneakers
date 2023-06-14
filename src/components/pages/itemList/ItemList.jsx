@@ -1,13 +1,13 @@
-import { useState } from "react";
 
-const ItemList = () => {
-  const [edad, setEdad] = useState(18)
+
+const ItemList = ({saludo}) => {
+  
 
 
 
   return (
     <>
-      <h4>{edad}</h4>
+      <h4>{saludo}</h4>
     </>
   )
 }
