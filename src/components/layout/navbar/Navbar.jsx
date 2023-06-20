@@ -1,19 +1,19 @@
-import CartWidget from "./components/common/cartWidget/CartWidget"
-
-const Navbar = ()=>{
-    return (
-        <div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-        <CartWidget/>
-        </div>
-
-
-
-    )
-}
-export default Navbar
+import CartWidget from "../../common/cartWidget/CartWidget";
+import "./Navbar.css";
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <div className="Contenedor">
+        <ul>
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Contact Us</a>
+        </ul>
+        <CartWidget />
+      </div>
+      
+    </div>
+    
+  );
+};
+export default Navbar;
