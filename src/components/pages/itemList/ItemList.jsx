@@ -1,13 +1,14 @@
+import CounterContainer from "../../common/counter/CounterContainer"
 
 
-const ItemList = ({saludo}) => {
+const ItemList = () => {
   
-
+  
 
 
   return (
     <>
-      <button onClick={}>saludar</button>
+      <CounterContainer stock={7}/>
     </>
   )
 }

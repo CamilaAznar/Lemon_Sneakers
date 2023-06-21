@@ -1,5 +1,10 @@
-.carrito{
-    align-items: center;
-    justify-content: flex-end;
-    justify-content: space-between;
+.carrito {
+  align-items: center;
+  display: flex;
+  color: white;
+
+}
+
+.carrito p {
+    margin-left: 5px;
 }

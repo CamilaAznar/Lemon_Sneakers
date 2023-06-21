@@ -1,15 +1,16 @@
-
-import { useState } from "react";
 import Navbar from "./components/layout/navbar/Navbar";
+import ItemDetail from "./components/pages/itemDetail/ItemDetail";
 import ItemList from "./components/pages/itemList/ItemList";
+import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 function App() {
-  const [saludo, setSaludo] = useState("Hola Usuario")
-
   return (
     <div>
-      
-      <Navbar />
-      <ItemList saludo={saludo}/>
+      <Navbar>
+        
+      </Navbar>
+      <ItemList />
+      <ItemDetail/>
+      <ItemListContainer greeting="saludo"/>
     </div>
   );
 }
