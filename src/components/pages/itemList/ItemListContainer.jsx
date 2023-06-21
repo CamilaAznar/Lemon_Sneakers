@@ -1,7 +1,10 @@
 
 const ItemListContainer = ({ greeting }) => {
+
+
   return (
-    <h3>{greeting}</h3>
+
+    <h2>{greeting}</h2>
   )
 }
  export default ItemListContainer

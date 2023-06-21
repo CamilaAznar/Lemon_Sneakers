@@ -1,18 +1,34 @@
-.Contenedor{
-    width: 100%;
-    height: 50px;
-    background-color: black;
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor ul a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  padding: 20px;
+}
+
+.categorias{
+    padding-left: 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
+    
 }
 
-a{
+.categorias button{
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
     color: white;
-    text-decoration: none;
-    font-size: larger;
-    padding: 20px;
 }
 
+.carrito{
+    padding-right: 30px;
+}

@@ -3,11 +3,11 @@ import ItemDetail from "./components/pages/itemDetail/ItemDetail";
 import ItemList from "./components/pages/itemList/ItemList";
 import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 function App() {
+
+  
   return (
     <div>
-      <Navbar>
-        
-      </Navbar>
+      <Navbar/>
       <ItemList />
       <ItemDetail/>
       <ItemListContainer greeting="saludo"/>
