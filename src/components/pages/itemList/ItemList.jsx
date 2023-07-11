@@ -1,16 +1,25 @@
-import CounterContainer from "../../common/counter/CounterContainer"
+import { Card } from "@mui/material";
+import  "./itemListContainer.css"
 
-
-const ItemList = () => {
-  
-  
-
-
+const ItemList = ({ items }) => {
   return (
-    <>
-      <CounterContainer stock={7}/>
-    </>
-  )
-}
+    <div className="container">
+      {items.map((item) => {
+        return (
+          <Card className="card" key={item.id}>
+            <img src={item.img} alt="" />
+            <h3>{item.nombre}</h3>
+            <p>{item.descripcion}</p>
+            <h5>{item.precio}</h5>
+            
+            <button> agregar al carrito</button>
 
-export default ItemList
+            
+          </Card>
+        );
+      })}
+    </div>
+  );
+};
+
+export default ItemList;
