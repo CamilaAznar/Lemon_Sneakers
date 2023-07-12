@@ -1,11 +1,7 @@
-import styles from "./Cart.module.css"
+
 
 const Cart = () => {
-  return (
-    <div className={styles.container}>
-        <h1 className={styles.title}>Carrito</h1>
-    </div>
-  )
+  return <h1>carrito</h1>
 }
 
 export default Cart

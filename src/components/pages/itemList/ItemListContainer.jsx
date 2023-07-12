@@ -1,25 +1,25 @@
-
 import ItemList from "./ItemList";
 import { productos } from "../../../productos/Productos";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
+  const [items, setItem] = useState([]);
 
-  const [items, setItems] = useState([])
-  const [error, setError] = useState("")
+  const { categoria } = useParams();
+  console.log(categoria)
 
-
-  useEffect(()=>{
-    const tarea = new Promise((resolve, reject) => {
-      resolve(productos);
-      // reject("Salio todo mal :(")
+  useEffect(() => {
+    let productosFiltrados = productos.filter((elemento) => elemento.categoria === categoria)
+    const tarea = new Promise((resolve) => {
+      resolve(categoria === undefined ? productos : productosFiltrados);
     });
-  
+
     tarea
-      .then((respuesta) => setItems(respuesta))
-      .catch((error) => setError(error));
-  }, [])
-  
+      .then((respuesta) => setItem(respuesta))
+      .catch((error) => console.log(error));
+  }, [categoria]);
+
   return <ItemList items={items} />;
 };
 export default ItemListContainer;

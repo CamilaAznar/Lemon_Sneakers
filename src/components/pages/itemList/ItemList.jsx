@@ -1,6 +1,4 @@
-import { Card } from "@mui/material";
-
-import "./ItemListContainer.css"
+import "./ItemList.css"
 import ProductCard from "../../common/productCard/ProductCard";
 
 const ItemList = ({ items }) => {

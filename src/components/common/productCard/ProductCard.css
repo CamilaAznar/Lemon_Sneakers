@@ -1,9 +1,8 @@
 .card{
     width: 300px;
     border-radius: 10px;
-    height: 400px;
-    transition: all 0.5s;
-    background-color: blueviolet;
+    height: 430px;
+    transition: all 0.3s;
     
 }
 .card img{
@@ -11,23 +10,21 @@
     
 }
 .card:hover{
-    width: 350px;
-    border-radius: 10px;
-    height: 450px;
-    background-color: rgb(91, 91, 230); */
+    background-color: ;
 }  
-
 
 button{
     border-radius: 6px;
     border: 1px solid black;
     padding: 3px;
+    cursor: pointer;
     
 }
 
 .contenido{
-    color: white;
+    color:black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-} 
+}
+    

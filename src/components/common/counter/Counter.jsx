@@ -1,13 +1,20 @@
-
+import "./Counter.css"
 
 const Counter = ({contador, sumar, restar, onAdd}) => {
   return (
     <div>
-        <h3>{contador}</h3>
-        <button onClick={sumar}>sumar</button>
-        <button onClick={restar}>restar</button>
-        <button onClick={()=> onAdd(contador)}>Agregar al carrito</button>
+      <div className="contador">
+      <button onClick={restar} className="sumaResta">-</button>
+      <h3>{contador}</h3>
+      <button onClick={sumar} className="sumaResta">+</button>
     </div>
+    <div>
+        <button onClick={()=> onAdd(contador)} className="carrito">Agregar al carrito</button>
+    </div>
+    </div>
+    
+      
+    
   )
 }
 

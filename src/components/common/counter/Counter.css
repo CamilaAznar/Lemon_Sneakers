@@ -1,0 +1,28 @@
+.contador{
+    margin-top: 10px;
+    display: flex;
+    padding: 3px;
+    justify-content: space-evenly;
+}
+
+.sumaResta{
+    background-color: #A3E4D7;
+    font-size:10px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;   
+    border:0px;
+    width:60px;
+    height:19px
+}
+
+.carrito{
+    
+    font-size:11px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    width:150px;
+    border: 0px;
+    height: 25px;
+    
+    
+}

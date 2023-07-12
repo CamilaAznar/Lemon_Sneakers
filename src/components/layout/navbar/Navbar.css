@@ -4,7 +4,8 @@
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px;
   align-items: center;
 }
 
@@ -16,12 +17,11 @@
 }
 
 .categorias{
-    display: flex;
-    
+    display: flex; 
 }
 
 .categorias button{
-    
+    font-size: 17px;
     cursor: pointer;
     border: none;
     background-color: black;

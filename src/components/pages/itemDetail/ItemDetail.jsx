@@ -1,7 +1,11 @@
+import ProductCard from "../../common/productCard/ProductCard";
 
 
-const ItemDetail = () => {
-  return <div></div>;
+const ItemDetail = ({producto}) => {
+
+  return (
+    <ProductCard item={producto}/>
+  )
 };
 
 export default ItemDetail;
