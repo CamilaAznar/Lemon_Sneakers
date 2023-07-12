@@ -1,15 +1,9 @@
 .container{
+    width: 100%;
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
     
 }
 
-.card{
-    width: 200px;
-    border-radius: 10px;
-    height: 350px;
-}
-.card img{
-    width: 200px;
-}

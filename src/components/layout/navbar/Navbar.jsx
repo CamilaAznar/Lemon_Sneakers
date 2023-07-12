@@ -1,6 +1,6 @@
 import CartWidget from "../../common/cartWidget/CartWidget";
 import "./Navbar.css";
-const Navbar = ({children}) => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="categorias">
@@ -14,7 +14,7 @@ const Navbar = ({children}) => {
           <a href="">About Us</a>
           <a href="">Contact Us</a>
         </ul>
-        {children}
+        
       </div>
       <div className="carrito">
         <CartWidget />

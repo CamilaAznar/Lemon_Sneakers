@@ -4,7 +4,7 @@
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -16,13 +16,12 @@
 }
 
 .categorias{
-    padding-left: 15px;
     display: flex;
     
 }
 
 .categorias button{
-    margin-right: 10px;
+    
     cursor: pointer;
     border: none;
     background-color: black;
