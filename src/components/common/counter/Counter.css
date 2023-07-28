@@ -4,25 +4,77 @@
     padding: 3px;
     justify-content: space-evenly;
 }
+.contadorContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .sumaResta{
     background-color: #A3E4D7;
-    font-size:10px;
+    font-size:20px;
     font-family:Verdana,Helvetica;
     font-weight:bold;   
     border:0px;
-    width:60px;
-    height:19px
+    width:80px;
+    height:30px
 }
 
-.carrito{
-    
-    font-size:11px;
+.AgregarAlCarrito{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+/* .carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A3E4D7;
+    font-size:13px;
     font-family:Verdana,Helvetica;
     font-weight:bold;
-    width:150px;
+    width: 120px;
     border: 0px;
-    height: 25px;
+    height: 50px;
     
     
-}
+} */
+
+.carrito {
+    background: #fff; /* color de fondo */
+    color:  black; /* color de fuente */
+    border: 2px solid  #A3E4D7; /* tamaño y color de borde */
+    padding: 10px;
+    border-radius: 5px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .carrito:hover {
+    color: black; /* color de fuente hover */
+  }
+  .carrito::after {
+    content: "";
+    background:  #A3E4D7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .carrito:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }

@@ -3,12 +3,14 @@ import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 import Navbar from "./components/layout/navbar/Navbar";
 import Cart from "./components/pages/cart/Cart";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer"; 
+import AboutUsContainer from "./components/pages/aboutUs/AboutUsContainer";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar/>
       <Routes>
+        <Route path="/AboutUs" element={<AboutUsContainer/>} />
         <Route path="/" element={ <ItemListContainer/>} /> 
         <Route path="/Category/:categoria" element={<ItemListContainer/>} />
         <Route path="/Cart" element={ <Cart/>}/>

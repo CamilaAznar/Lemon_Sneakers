@@ -1,0 +1,41 @@
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(233, 231, 231);
+}
+
+img{
+    width: 300px;
+}
+
+.imagenes{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.desc{
+    
+    display: flex;
+    flex-direction: column;
+}
+ 
+.nombre{
+    font-size: 60px;
+}
+.descripcion{
+    margin-top: 60px;
+    height: 500px;
+    width: 50%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+}

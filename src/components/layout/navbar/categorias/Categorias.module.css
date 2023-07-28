@@ -1,0 +1,39 @@
+
+/* Agrega estilos en un archivo CSS o utiliza styled-components, etc. */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdownButton {
+    background-color: #181717;
+    color: white;
+    border: 1px solid #000000;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdownList {
+    list-style: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .dropdownList li {
+    padding: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .dropdownList li:hover {
+    background-color: #ccc;
+  }
+  

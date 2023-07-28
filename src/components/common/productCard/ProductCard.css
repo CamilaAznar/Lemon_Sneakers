@@ -2,7 +2,7 @@
     width: 300px;
     border-radius: 10px;
     height: 430px;
-    transition: all 0.3s;
+    transition: all 0.5s;
     
 }
 .card img{
@@ -10,7 +10,8 @@
     
 }
 .card:hover{
-    background-color: ;
+    transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }  
 
 button{
@@ -27,4 +28,11 @@ button{
     flex-direction: column;
     justify-content: space-around;
 }
+.desc{
+    color: grey;
+}
     
+.link{
+    text-decoration: none;
+    
+}
