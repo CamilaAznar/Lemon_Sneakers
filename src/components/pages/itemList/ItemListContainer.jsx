@@ -7,10 +7,12 @@ const ItemListContainer = () => {
   const [items, setItem] = useState([]);
 
   const { categoria } = useParams();
-  console.log(categoria)
+  console.log(categoria);
 
   useEffect(() => {
-    let productosFiltrados = productos.filter((elemento) => elemento.categoria === categoria)
+    let productosFiltrados = productos.filter(
+      (elemento) => elemento.categoria === categoria
+    );
     const tarea = new Promise((resolve) => {
       resolve(categoria === undefined ? productos : productosFiltrados);
     });

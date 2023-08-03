@@ -11,7 +11,7 @@
 }
 
 .sumaResta{
-    background-color: #A3E4D7;
+    background-color: #5ce1e6;
     font-size:20px;
     font-family:Verdana,Helvetica;
     font-weight:bold;   
@@ -27,25 +27,10 @@
    
 }
 
-/* .carrito{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #A3E4D7;
-    font-size:13px;
-    font-family:Verdana,Helvetica;
-    font-weight:bold;
-    width: 120px;
-    border: 0px;
-    height: 50px;
-    
-    
-} */
-
 .carrito {
     background: #fff; /* color de fondo */
     color:  black; /* color de fuente */
-    border: 2px solid  #A3E4D7; /* tamaño y color de borde */
+    border: 2px solid  #5ce1e6; /* tamaño y color de borde */
     padding: 10px;
     border-radius: 5px; /* redondear bordes */
     position: relative;
@@ -54,11 +39,11 @@
     display: inline-block;
   }
   .carrito:hover {
-    color: black; /* color de fuente hover */
+    color: white; /* color de fuente hover */
   }
   .carrito::after {
     content: "";
-    background:  #A3E4D7; /* color de fondo hover */
+    background:  #5ce1e6; /* color de fondo hover */
     position: absolute;
     z-index: -1;
     padding: 16px 20px;

@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import Categorias from "../navbar/categorias/Categorias"
 import "./Navbar.css";
@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="cart">
         <CartWidget />
       </div>
-      <Outlet/>
+      
       
     </div>
     

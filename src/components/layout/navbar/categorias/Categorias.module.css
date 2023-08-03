@@ -5,9 +5,9 @@
   }
   
   .dropdownButton {
-    background-color: #181717;
-    color: white;
-    border: 1px solid #000000;
+    background-color: white;
+    color: #8c52ff;
+    border: 1px solid #8c52ff;
     padding: 8px 16px;
     cursor: pointer;
   }
