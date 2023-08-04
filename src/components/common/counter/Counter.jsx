@@ -1,5 +1,6 @@
 import "./Counter.css"
 
+
 const Counter = ({contador, sumar, restar, onAdd}) => {
   return (
     <div className="contadorContainer">

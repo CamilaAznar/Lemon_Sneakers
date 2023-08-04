@@ -1,0 +1,17 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-image: url("https://res.cloudinary.com/duwj1tzea/image/upload/v1691179962/5.0-original_c4kxow.jpg") ;
+}
+
+.cargando{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}

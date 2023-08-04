@@ -2,11 +2,11 @@ import { useState } from "react"
 import Counter from "./Counter"
 
 
-const CounterContainer = ({stock, onAdd}) => {
-    const [contador, setContador] = useState(0)
+const CounterContainer = ({stock, onAdd, initial=1}) => {
+    const [contador, setContador] = useState(initial)
 
     const sumar = () => {
-      contador< stock ? setContador(contador+1): alert("cantidad inexistente")
+      contador< stock ? setContador(contador+1): <button disabled></button>
     }
     const restar = () =>{
       contador > 0 && setContador(contador-1)

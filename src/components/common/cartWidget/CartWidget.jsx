@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
 
 const CartWidget = () => {
-  const {cart} = useContext(CartContext)
-
+  const { totalQuantity } = useContext(CartContext)
+  let total = totalQuantity() 
   return (
     <Link to={"/Cart"}>
-      <Badge badgeContent={cart.length} color="secondary">
+      <Badge badgeContent={total} color="secondary">
         <BsCartFill color="white" size={25} />
       </Badge>
     </Link>

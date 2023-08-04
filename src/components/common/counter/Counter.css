@@ -11,7 +11,7 @@
 }
 
 .sumaResta{
-    background-color: #5ce1e6;
+    background-color: #651b11;
     font-size:20px;
     font-family:Verdana,Helvetica;
     font-weight:bold;   
@@ -30,7 +30,7 @@
 .carrito {
     background: #fff; /* color de fondo */
     color:  black; /* color de fuente */
-    border: 2px solid  #5ce1e6; /* tamaño y color de borde */
+    border: 2px solid  #651b11; /* tamaño y color de borde */
     padding: 10px;
     border-radius: 5px; /* redondear bordes */
     position: relative;
@@ -43,7 +43,7 @@
   }
   .carrito::after {
     content: "";
-    background:  #5ce1e6; /* color de fondo hover */
+    background:  #651b11; /* color de fondo hover */
     position: absolute;
     z-index: -1;
     padding: 16px 20px;
