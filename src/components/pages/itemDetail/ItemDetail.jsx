@@ -1,7 +1,7 @@
 import  estilos from "./ItemDetail.module.css"
 import CounterContainer from "../../common/counter/CounterContainer";
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ({producto, onAdd}) => {
 
   return (
     <div className={estilos.contenedor}>
@@ -15,7 +15,7 @@ const ItemDetail = ({producto}) => {
         <h2 className={estilos.nombre}>{producto.nombre}</h2>
         <h4 className={estilos.desc}>{producto.descripcion}</h4>
         <h3>${producto.precio}</h3>
-        <CounterContainer stock={producto.stock} />
+        <CounterContainer stock={producto.stock} onAdd={onAdd} />
         
       </div>
     </div>
