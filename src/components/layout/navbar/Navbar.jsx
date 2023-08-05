@@ -3,6 +3,7 @@ import CartWidget from "../../common/cartWidget/CartWidget";
 import Categorias from "../navbar/categorias/Categorias"
 import "./Navbar.css";
 const Navbar = () => {
+  let userRol = "user"  
   return (
     <div className="navbar">
       <div className="categorias">
@@ -16,6 +17,11 @@ const Navbar = () => {
         </ul>
         
       </div>
+      {
+        userRol === "admin" && <Link to={"/Dashboard"}>ADMIN</Link>
+      }
+
+      
       <div className="cart">
         <CartWidget />
       </div>

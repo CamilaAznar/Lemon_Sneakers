@@ -1,6 +1,6 @@
 export let productos = [
     {
-        id: 1,
+
         nombre: "Air Jordan 1 Mid",
         descripcion: "Zapatillas Jordan para Mujer",
         categoria: "AirJordan",
@@ -13,11 +13,11 @@ export let productos = [
         
     },
     {
-        id: 2,
+        
         nombre: "Nike Air Huarache Premium",
         descripcion: "Zapatillas de Moda para Hombre",
         categoria: "NikeAir", 
-        precio: "72.500",
+        precio: 72.500,
         stock: 9,
         img: "https://res.cloudinary.com/duwj1tzea/image/upload/v1688223966/597264-1000-1000_umb84c.jpg",
         img2: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689371765/597747-1200-1200_inbtqv.jpg",
@@ -25,7 +25,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689371783/598670-1200-1200_eipewf.jpg"
     },
     {
-        id: 3,
+    
         nombre: "Nike Air Max 90 SE",
         descripcion: "Zapatillas de Moda para Hombre",
         categoria: "NikeAir",
@@ -37,7 +37,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689372087/561224-1200-1200_tgaqzg.jpg"
     },
     {
-        id: 4,
+     
         nombre: "Nike ZoomX Vaporfly NEXT% 2",
         descripcion: "Zapatillas de running para Hombre",
         categoria: "NikeRunning",
@@ -49,7 +49,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689372317/581213-1200-1200_yhkoe7.jpg"
     },
     {
-        id: 5,
+        
         nombre: "Nike Revolution 6 NN JP",
         descripcion: "Zapatillas de Running para Niño/a",
         categoria: "NikeRunning",
@@ -61,7 +61,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689372593/634824-1200-1200_j4lrik.jpg"
     },
     {
-        id: 6,
+        
         nombre: "Nike Renew Serenity Run 2",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -73,7 +73,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689803347/502362-1200-1200_g9vj88.jpg",
     },
     {
-        id: 7,
+       
         nombre: "Nike Air Trainer 1",
         descripcion: "Zapatillas de Moda para Hombre",
         categoria: "NikeAir",
@@ -85,7 +85,6 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689803742/635971-1200-1200_f3dlyv.jpg",
     },
     {
-        id: 8,
         nombre: "Nike Run Swift 3",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -98,7 +97,7 @@ export let productos = [
 
     },
     {
-        id: 9,
+        
         nombre: "Nike ZoomX Vaporfly Next% 2",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -110,7 +109,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689805558/636749-1200-1200_pfl1ra.jpg",
     },
     {
-        id: 10,
+        
         nombre: "Nike Air Winflo 9",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -122,7 +121,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689805769/705465-1200-1200_baelmt.jpg",
     },
     {
-        id: 11,
+        
         nombre: "Nike Air Max SYSTM",
         descripcion: "Zapatillas de Moda para Hombre",
         categoria: "NikeAir",
@@ -134,7 +133,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689806066/701294-1200-1200_eepkpw.jpg",
     },
     {
-        id: 12,
+       
         nombre: "Nike Downshifter 12",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -146,7 +145,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689806343/628073-1200-1200_cszkcw.jpg",
     },
     {
-        id: 13,
+      
         nombre: "Nike Pegasus 39",
         descripcion: "Zapatillas de Running para Mujer",
         categoria: "NikeRunning",
@@ -158,7 +157,7 @@ export let productos = [
         img4: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689806615/706408-1200-1200_s4m9ke.jpg",
     },
     {
-        id: 14,
+        
         nombre: "Air Jordan 1 Mid SE Craft",
         descripcion: "Zapatillas Jordan Para Hombre",
         categoria: "AirJordan",

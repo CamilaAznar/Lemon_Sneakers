@@ -40,9 +40,9 @@ const Cart = ({ cart, deleteItem, vaciarCarrito, total }) => {
       </div>
       </div>
       {
-        cart.length > 0 && <button onClick={vaciarCarrito}>Vaciar carrito</button>
+        cart.length > 0 && <button onClick={vaciarCarrito} style={{backgroundColor: "#b82130", padding:"10px", color: "white", border: "1px solid #b82130"}}>Vaciar carrito</button>
       }
-      
+      <Link to="/Checkout"><button style={{backgroundColor: "#31e040", padding:"10px", color: "white", border: "1px solid #31e040"}} >Finalizar Compra</button></Link>
     </div>
   );
 };

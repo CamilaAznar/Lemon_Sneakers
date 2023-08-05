@@ -1,29 +1,32 @@
 import { useContext, useEffect, useState } from "react"
 import ItemDetail from "./ItemDetail"
-import { productos } from "../../../productos/Productos"
-import {  useParams } from "react-router-dom"
+import {  useParams, useNavigate } from "react-router-dom"
 import { CartContext } from "../../../context/CartContext"
 import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
-
+import {db} from "../../../firebaseConfig"
+import { getDoc, collection, doc} from "firebase/firestore"
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState({})
     const {addToCart, getQuantityById} = useContext(CartContext)
 
     
-    
     const { id } = useParams()
-    
+    const navigate = useNavigate()
+
     
     const totalQuantity = getQuantityById(id)
 
     useEffect(()=>{
-        let productoSeleccionado = productos.find((el)=> el.id === Number(id) )
-        const tarea = new Promise ((resolve)=> {
-            resolve(productoSeleccionado)
-        })
-        tarea.then(respuesta => setProducto(respuesta))
+       let productosColeccion = collection(db, "productos")
+       let productoRef = doc( productosColeccion, id)
+       getDoc(productoRef).then( res => {
+        let producto = {...res.data() , id: res.id }
+        setProducto(producto)
+       })
+
+
     }, [id])
 
     const onAdd = (cantidad) => {
@@ -39,14 +42,8 @@ const ItemDetailContainer = () => {
             progress: undefined,
             theme: "dark",
             });
-        
+        navigate("/Cart")
     }
-
-
-
-
-
-
   
     return <>
         <ItemDetail producto={producto} onAdd={onAdd} totalQuantity={totalQuantity}/>
