@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC5t2y55ZBGn54Rwsx-gAapWwba8-Q4ax8",
-  authDomain: "lemon-sneakers.firebaseapp.com",
-  projectId: "lemon-sneakers",
-  storageBucket: "lemon-sneakers.appspot.com",
-  messagingSenderId: "398437893846",
-  appId: "1:398437893846:web:53c7270023794caafaeb77"
+  apiKey: import.meta.env.VITE_APIKEY ,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN ,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET ,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID ,
+  appId: import.meta.env.VITE_APPID
 };
 
 const app = initializeApp(firebaseConfig);
