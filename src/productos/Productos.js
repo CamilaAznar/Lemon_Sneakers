@@ -17,7 +17,7 @@ export let productos = [
         nombre: "Nike Air Huarache Premium",
         descripcion: "Zapatillas de Moda para Hombre",
         categoria: "NikeAir", 
-        precio: 72.500,
+        precio: 72.599,
         stock: 9,
         img: "https://res.cloudinary.com/duwj1tzea/image/upload/v1688223966/597264-1000-1000_umb84c.jpg",
         img2: "https://res.cloudinary.com/duwj1tzea/image/upload/v1689371765/597747-1200-1200_inbtqv.jpg",

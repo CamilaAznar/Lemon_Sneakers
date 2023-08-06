@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import CartWidget from "../../common/cartWidget/CartWidget";
 import Categorias from "../navbar/categorias/Categorias"
 import "./Navbar.css";
+import { FaLemon } from 'react-icons/fa';
+
+
 const Navbar = () => {
   let userRol = "user"  
   return (
@@ -11,9 +14,9 @@ const Navbar = () => {
       </div>
       <div className="contenedor">
         <ul>
-          <Link to={"/"}>Home</Link>
-          <Link to={"/AboutUs"}>About Us</Link>
-          <Link>Contact Us</Link>
+          <FaLemon color="white" size={25}/>  
+          <Link to={"/"}>Lemon Sneakers</Link>
+          
         </ul>
         
       </div>

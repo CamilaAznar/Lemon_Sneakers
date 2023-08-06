@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import AboutUsContainer from "../components/pages/aboutUs/AboutUsContainer";
 import ItemListContainer from "../components/pages/itemList/ItemListContainer";
 import ItemDetailContainer from "../components/pages/itemDetail/ItemDetailContainer";
 import CartContainer from "../components/pages/cart/CartContainer";
@@ -10,7 +9,6 @@ import ProtectedRoutes from "./ProtectedRoutes";
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/AboutUs" element={<AboutUsContainer />} />
       <Route path="/" element={<ItemListContainer />} />
       <Route path="/Category/:categoria" element={<ItemListContainer />} />
       <Route path="/Cart" element={<CartContainer />} />
